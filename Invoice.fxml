@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="numerouno.InvoiceController">
+   <children>
+      <Label fx:id="title" layoutX="220.0" layoutY="31.0" prefHeight="48.0" prefWidth="282.0" text="NUMERO UNO INTERIORS" underline="true">
+         <font>
+            <Font name="Script MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtnumeroaddress" editable="false" layoutX="21.0" layoutY="121.0" prefHeight="125.0" prefWidth="167.0" style="-fx-background-color: transparent;" text="NO. A-67 , Lake Chad Street&#10;Off Ascenssion Road,&#10;2nd floor, AA building &#10;Kaigama&#10;&#10;CA 95064" />
+      <GridPane layoutX="54.0" layoutY="283.0" prefHeight="148.0" prefWidth="296.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="10.0" prefWidth="126.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="237.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="30.0" prefWidth="90.0" text="SALES  ID" />
+            <Label fx:id="lblsalesid" prefHeight="36.0" prefWidth="149.0" GridPane.columnIndex="1" />
+            <Label prefHeight="30.0" prefWidth="100.0" text="Client Name" GridPane.rowIndex="1" />
+            <Label fx:id="lblclientname" prefHeight="30.0" prefWidth="149.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label prefHeight="30.0" prefWidth="100.0" text="Contact Number " GridPane.rowIndex="2" />
+            <Label fx:id="lblclientcontact" prefHeight="30.0" prefWidth="149.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label prefHeight="30.0" prefWidth="100.0" text="Client Email" GridPane.rowIndex="3" />
+            <Label fx:id="lblclientemail" prefHeight="30.0" prefWidth="149.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="390.0" layoutY="283.0" prefHeight="148.0" prefWidth="326.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="129.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.0" minWidth="10.0" prefWidth="197.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="131.0" minHeight="10.0" prefHeight="131.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="30.0" prefWidth="76.0" text="ORDER DATE" />
+            <Label fx:id="lblorderdate" prefHeight="30.0" prefWidth="149.0" GridPane.columnIndex="1" />
+            <Label prefHeight="30.0" prefWidth="100.0" text="CLIENT ADDRESS" GridPane.rowIndex="1" />
+            <TextArea fx:id="txtclientaddress" editable="false" prefHeight="89.0" prefWidth="197.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Label fx:id="lblinvoice" layoutX="339.0" layoutY="233.0" prefHeight="27.0" prefWidth="77.0" text="INVOICE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Separator fx:id="line" layoutY="269.0" prefHeight="1.0" prefWidth="800.0" style="-fx-background-color: red;" />
+      <TableView fx:id="itemdetailtable" layoutX="95.0" layoutY="443.0" prefHeight="172.0" prefWidth="565.0">
+         <columns>
+            <TableColumn fx:id="tbitemid" prefWidth="75.0" text="Item ID" />
+            <TableColumn fx:id="tblitemname" prefWidth="100.0" text="Item Name" />
+            <TableColumn fx:id="tblitemdescription" prefWidth="150.0" text="Item Description" />
+            <TableColumn fx:id="tblquantity" prefWidth="75.0" text="Qauntity" />
+            <TableColumn fx:id="tblrate" prefWidth="75.0" text="Rate" />
+            <TableColumn fx:id="tblprice" prefWidth="75.0" text="Price(NGN)" />
+         </columns>
+      </TableView>
+      <Label layoutX="92.0" layoutY="632.0" prefHeight="30.0" prefWidth="51.0" text="TOTAL:" />
+      <Label fx:id="lbltotalprice" layoutX="180.0" layoutY="632.0" prefHeight="30.0" prefWidth="133.0" />
+      <JFXHamburger fx:id="hamburger" layoutX="31.0" layoutY="31.0" />
+      <JFXDrawer fx:id="drawer" layoutX="-19.0" layoutY="86.0" prefHeight="483.0" prefWidth="133.0" />
+      <JFXButton fx:id="btnprintinvoice" layoutX="194.0" layoutY="668.0" prefHeight="25.0" prefWidth="470.0" text="PRINT INVOICE" />
+   </children>
+</AnchorPane>

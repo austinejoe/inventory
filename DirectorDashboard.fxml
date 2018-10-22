@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="gridpane" accessibleText="gridPane" prefHeight="515.0" prefWidth="632.0" style="-fx-background-color: #888;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <JFXButton accessibleText="registerUser" prefHeight="37.0" prefWidth="315.0" styleClass="style_hamburger_button2" stylesheets="@numero.css" text="REGISTER USER" />
+      <JFXButton accessibleText="salesOrder" layoutX="10.0" layoutY="86.0" prefHeight="37.0" prefWidth="318.0" styleClass="style_hamburger_button2" stylesheets="@numero.css" text="SALES ORDER" GridPane.rowIndex="2" />
+      <JFXButton accessibleText="viewStock" layoutX="303.0" layoutY="23.0" prefHeight="37.0" prefWidth="320.0" styleClass="style_hamburger_button2" stylesheets="@numero.css" text="VIEW STOCK" GridPane.columnIndex="1" />
+      <JFXButton accessibleText="searchOrder" layoutX="303.0" layoutY="86.0" prefHeight="37.0" prefWidth="314.0" styleClass="style_hamburger_button2" stylesheets="@numero.css" text="SEARCH SALES ORDER" GridPane.rowIndex="3" />
+      <JFXButton accessibleText="generateInvoice" layoutX="10.0" layoutY="210.0" prefHeight="37.0" prefWidth="318.0" styleClass="style_hamburger_button2" stylesheets="@numero.css" text="GENERATE INVOICE" GridPane.rowIndex="4" />
+      <JFXButton accessibleText="viewSales" layoutX="10.0" layoutY="272.0" prefHeight="37.0" prefWidth="317.0" styleClass="style_hamburger_button2" stylesheets="@numero.css" text="VIEW SALES" GridPane.rowIndex="5" />
+      <JFXButton accessibleText="newStock" layoutX="10.0" layoutY="334.0" prefHeight="37.0" prefWidth="322.0" styleClass="style_hamburger_button2" stylesheets="@numero.css" text="NEW STOCK" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <JFXButton accessibleText="existingStock" layoutX="303.0" layoutY="148.0" prefHeight="37.0" prefWidth="320.0" styleClass="style_hamburger_button2" stylesheets="@numero.css" text="EXISTING STOCK" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <JFXButton accessibleText="deleteStock" layoutX="10.0" layoutY="396.0" prefHeight="37.0" prefWidth="318.0" styleClass="style_hamburger_button2" stylesheets="@numero.css" text="DELETE STOCK" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <JFXButton accessibleText="deleteCustomer" layoutX="303.0" layoutY="272.0" prefHeight="37.0" prefWidth="334.0" styleClass="style_hamburger_button2" stylesheets="@numero.css" text="DELETE CUSTOMER" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <JFXButton accessibleText="updateStock" layoutX="303.0" layoutY="272.0" prefHeight="37.0" prefWidth="318.0" styleClass="style_hamburger_button2" stylesheets="@numero.css" text="UPDATE STOCK" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <JFXButton accessibleText="registerEmployee" prefHeight="40.0" prefWidth="315.0" styleClass="style_hamburger_button2" stylesheets="@numero.css" text="REGISTER EMPLOYEE" GridPane.rowIndex="1" />
+      <JFXButton accessibleText="logout" prefHeight="42.0" prefWidth="316.0" styleClass="style_hamburger_button2" stylesheets="@numero.css" text="LOGOUT" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <JFXListView accessibleText="listview" style="-fx-background-color: #888;" GridPane.rowIndex="6" />
+      <JFXButton accessibleText="transaction" prefHeight="38.0" prefWidth="313.0" styleClass="style_hamburger_button2" stylesheets="@numero.css" text="TRANSACTION" GridPane.rowIndex="6" />
+   </children>
+</GridPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="150.0" spacing="5.0" style="-fx-background-color: #888;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="117.0" prefWidth="150.0" style="-fx-background-color: #008080;" />
+      <Label text="Continue as" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets left="45.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <JFXButton accessibleText="director" prefHeight="43.0" prefWidth="132.0" styleClass="style_hamburger_button" stylesheets="@numero.css" text="Director">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton accessibleText="finance" layoutX="10.0" layoutY="149.0" prefHeight="43.0" prefWidth="142.0" styleClass="style_hamburger_button" stylesheets="@numero.css" text="Finance Manager">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton accessibleText="warehouse" layoutX="10.0" layoutY="174.0" prefHeight="43.0" prefWidth="142.0" styleClass="style_hamburger_button" stylesheets="@numero.css" text="Warehouse Manager">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton accessibleText="sales" layoutX="10.0" layoutY="224.0" prefHeight="43.0" prefWidth="142.0" styleClass="style_hamburger_button" stylesheets="@numero.css" text="Sales Manager">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton accessibleText="humanResource" layoutX="10.0" layoutY="199.0" prefHeight="43.0" prefWidth="142.0" styleClass="style_hamburger_button" stylesheets="@numero.css" text="Human Resource manager">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton accessibleText="logout" layoutX="20.0" layoutY="309.0" prefHeight="43.0" prefWidth="142.0" styleClass="style_hamburger_button" stylesheets="@numero.css" text="Logout">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton accessibleText="exit" layoutX="10.0" layoutY="344.0" prefHeight="43.0" prefWidth="142.0" styleClass="style_hamburger_button" stylesheets="@numero.css" text="Exit">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </JFXButton>
+   </children>
+</VBox>
